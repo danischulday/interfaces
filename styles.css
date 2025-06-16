@@ -1,5 +1,5 @@
 /* ==============================
-   Reset y configuración global
+   CONFIG GLOBAL
 ============================== */
 * {
   margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 /* ==============================
-   Navegación
+   NAVEGACION
 ============================== */
 nav {
   position: fixed;
@@ -210,7 +210,7 @@ main {
 }
 
 /* ==============================
-   Testimonios y otras secciones
+   Testimonios
 ============================== */
 #testimonial {
   padding: 80px 0;
@@ -349,64 +349,95 @@ hr {
    Footer
 ============================== */
 
-footer{
-    background-color:  #1b1b1b;
-    text-align:center;
-    padding: 20px;
+.footer {
+  padding: 40px 20px 20px;
+  color: #ccc;
 }
 
-.rr-ss{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    padding: 20px;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
-.rr-ss a {
-    color: #fbdede;
+
+.newsletter h2 {
+  margin-bottom: 10px;
+  color: #fff;
 }
-.rr-ss i{
-    font-size: 30px;
-    padding: 0 30px 30px 30px;
+
+.newsletter p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
 }
-footer a{
-    text-decoration: none;
-    color: #535353;
 
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-footer a:hover{
-    color:#b983ff;
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
 }
-.enlaces {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    word-spacing: 5px;
-    font-size: 18px;
-    margin: 10px;
-    color: #535353;
 
-} 
-@media (min-width:360px) and (max-width: 720px){
+.newsletter button {
+  padding: 10px 20px;
+  background: #b983ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-    footer{
-        height: 60%;
-        width: 100%;
-    }
-    .rr-ss{
-        padding: 10px;
-    }
-        .rr-ss i{
-            font-size: 80%;
-            padding: 10px
-        }
-        .enlaces{
-            font-size: 80%;
-        }
-    }
-    @media (min-width: 721px){ 
+.newsletter button:hover {
+  background: #270348;
+}
 
-    }
+.social-media {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.8rem;
+}
 
+.social-media a {
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #b983ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom .links {
+  margin-bottom: 8px;
+}
+
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
 .testimonials {
   text-align: center;
   padding: 40px 20px;
