@@ -11,9 +11,9 @@
     </head>
 
     <body>
-      <!--Navegación-->
+<!--NAVEGACION-->
        <nav id="navbar">
-         <div class="nav-brand"> 
+         <div class="nav-brand">
           <a href="#">
             <img src="images/icono.png" alt="logo chattime" class="logo-img"/></a>
          <span class="nav-logo-text">ChatTime!</span> </div>
@@ -29,7 +29,7 @@
             <a href="#contact">Contacto</a> </div>
         </nav>
 
-       <!-- Contenedor Principal -->
+<!-- CONTENEDOR PRINCIPAL -->
   <main class="main-container py-5">
     <div class="container text-center">
       <!--<h1 class="glow-title mb-4">Videollamada WebRTC</h1>-->
@@ -52,6 +52,7 @@
   </main>
 
  <hr>
+
 <!--ABOUT US-->
 <section id="about_us">
   <div class="about-container scroll-fade">
@@ -93,6 +94,7 @@
     </div>
   </div>
 </section>
+
 <!--TESTIMONIOS-->
       <section class="testimonials">
   <h2>Nuestros usuarios opinan</h2>
@@ -140,7 +142,7 @@ He hecho muchos amigos...</p>
         </section>
   <br> 
   <hr>
-   <!-- FOOTER-->
+<!-- FOOTER-->
 <footer class="footer" id="contact">
   <div class="footer-content">
     <div class="newsletter">
@@ -169,31 +171,21 @@ He hecho muchos amigos...</p>
   </div>
 </footer>
 
-
-
-
-
-
-
-
-
-  <!-- Scripts -->
-   <script>
+<!-- SCRIPTS -->
+  
+  <script>
   const toggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');
 
   toggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
-</script>
+ </script>
    
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', () => {
-      document.getElementById('nav-links').classList.toggle('active');
-    });
-  </script>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="app.js"></script>
+  <script src="/socket.io/socket.io.js"> </script>
+
+  <script src="app.js"> </script>
+
   <script>
   const navbar = document.getElementById('navbar');
 
@@ -205,6 +197,7 @@ He hecho muchos amigos...</p>
     }
   });
   </script>
+
   <script>
   const faders = document.querySelectorAll('.scroll-fade');
 
@@ -225,7 +218,7 @@ He hecho muchos amigos...</p>
   faders.forEach(el => {
     appearOnScroll.observe(el);
   });
-</script>
+ </script>
 
 </body>
 </html>
