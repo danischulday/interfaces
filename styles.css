@@ -136,7 +136,6 @@ nav {
    Main Container
 ============================== */
 .main-container {
-  margin-top: 60px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -329,15 +328,16 @@ hr {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .main-container {
+    margin-top: 15%;
+  }
   .about-container {
     flex-direction: column;
     text-align: center;
   }
-
   .about-text h1 {
     font-size: 2rem;
   }
-
   .about-text p {
     font-size: 1rem;
   }
